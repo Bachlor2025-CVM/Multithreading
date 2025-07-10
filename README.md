@@ -1,6 +1,6 @@
-# Java Multithreading Examples
+# Java Multithreading Beispiele
 
-A comprehensive Java project demonstrating various multithreading concepts and techniques.
+Diese Applikation wurde im Verlauf einer Bachelorarbeit an der Hochschule Landshut erstellt. Sie dient dazu, anhand verscheidener Bespeiele eine Einführung in das Multithreading zu gebeb. 
 
 ## Project Structure
 
