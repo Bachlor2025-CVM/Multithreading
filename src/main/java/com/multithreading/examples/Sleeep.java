@@ -1,22 +1,18 @@
-package com.multithreading.examples;
+public class SleepDemo {
 
-class My extends Thread {
-    // Override the run method to define thread behavior
-    @Override
-    public void run() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Thread " + Thread.currentThread().getName() + " is running: " + i);
-            
-        }
-    }
-}
-
-public class Sleeep {
     public static void main(String[] args) {
-        My thread1 = new My(); // Create thread instance
-        My thread2 = new My(); // Create another thread instance
-        
-        thread1.start(); // Start the first thread
-        thread2.start(); // Start the second thread
+        System.out.println(" Starte Countdown...");// Start des 'Coundoun bis zum Aufwachen
+
+        for (int i = 5; i >= 1; i--) {
+            System.out.println(+ i + " Sekunden verbleiben...");// Ausgabe der verbleibenden Sekunden zum Aufwachehen
+
+            try {
+                Thread.sleep(1000); // Pause von 1000 ms = 1 Sekunde
+            } catch (InterruptedException e) {
+                System.out.println("❗ Der Schlaf wurde unterbrochen.");// Ausgabe das schlafen unterbrochen wurde
+            }
+        }
+
+        System.out.println(" Start erfolgt!");// Rückmeldung das Threat wider läuft
     }
 }
